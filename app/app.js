@@ -11,6 +11,10 @@ angular.module('vedita', [
         templateUrl: 'templates/main.html',
         controller: 'MainCtrl'
       })
+      .when('/edges', {
+        templateUrl: 'templates/edges.html',
+        controller: 'EdgesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

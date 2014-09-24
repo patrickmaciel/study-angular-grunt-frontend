@@ -56,14 +56,14 @@ module.exports = function(grunt) {
 
     watch: {
       dev: {
-        files: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js', '*.html' ],
+        files: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js', 'templates/**/*.html', '*.html' ],
         tasks: [ 'jshint', 'html2js:dist', 'concat:dist', 'clean:temp' ],
         options: {
           atBegin: true
         }
       },
       min: {
-        files: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js', '*.html' ],
+        files: [ 'Gruntfile.js', 'app/*.js', 'app/**/*.js', 'templates/**/*.html', '*.html' ],
         tasks: [ 'jshint', 'html2js:dist', 'concat:dist', 'clean:temp', 'uglify:dist' ],
         options: {
           atBegin: true
